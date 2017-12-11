@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <link rel = "stylesheet" href = "css/material.css">
+        <script src="js/materialize.min.js" type="text/javascript"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>Manual HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" data-activates="menu-lateral" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo" >Manual HTML5</a>
+                <ul id="menu-lateral" class="side-nav collapsible">
+                    <li class="white"><a href="#!" id="menu_main">Inicio</a></li>
+                    <li class="white">
+                        <a class="collapsible-header">HTML5<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_estructura">Estructura básica</a></li>
+                                <li><a href="#!" id="menu_formato">Formato texto</a></li>
+                                <li><a href="#!" id="menu_semanticas">Etiquetas semánticas</a></li>
+                                <li><a href="#!" id="menu_listas">Listas</a></li>
+                                <li><a href="#!" id="menu_tablas">Tablas</a></li>
+                                <li><a href="#!" id="menu_cajas">Modelo cajas</a></li>
+                                <li><a href="#!" id="menu_formularios">Formularios</a></li>
+                                <li><a href="#!" id="menu_enlaces">Enlaces</a></li>
+                                <li><a href="#!" id="menu_multimedia">Multimedia</a></li>
+                                <li><a href="#!" id="menu_canvas">Canvas</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="white">
+                        <a class="collapsible-header">Accesibilidad<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_wcag">WCAG</a></li>
+                                <li><a href="#!" id="menu_niveles">Niveles</a></li>
+                                <li><a href="#!" id="menu_legales">Normativa</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="white">
+                        <a class="collapsible-header">CSS<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_enlazar">Cómo enlazarlo</a></li>
+                                <li><a href="#!" id="menu_colores">Colores y fondos</a></li>
+                                <li><a href="#!" id="menu_fuentes">Fuentes</a></li>
+                                <li><a href="#!" id="menu_textos">Textos</a></li>
+                                <li><a href="#!" id="menu_clases">Clases e ids</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#!" id="menu_creditos">Sobre esta aplicación</a></li>
+                    <li><a href="#!" id="menu_ayuda">Manual usuario</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            
+            <div id="panel_main" class="panel" hidden>
+                <h1>Inicio</h1>
+                Vista inicial de la aplicación
+            </div>
+            <!-- HTML5 -->
+            <div id="panel_estructura" class="panel" hidden>
+				<h1>Estructura básica de HTML5</h1>
+                <p>html, head, body, meta, link, script, comentarios...</p>
+            </div>
+            <div id="panel_formato" class="panel" hidden>
+				<h1>Formato básico de texto</h1>
+                <p>h1..h6, p, b, strong, i, em, ins, sup, sub...</p>
+            </div>
+            <div id="panel_semanticas" class="panel" hidden>
+				<h1>Etiquetas semánticas</h1>
+                <p>header, footer, aside, article, nav...</p>
+            </div>
+            <div id="panel_listas" class="panel" hidden>
+				<h1>Listas</h1>
+                <p>ul, ol, li, dd, dt, listas anidadas...</p>
+            </div>
+            <div id="panel_tablas" class="panel" hidden>
+				<h1>Tablas</h1>
+                <p>table, tbody, tr, th, td...</p>
+            </div>
+            <div id="panel_cajas" class="panel" hidden>
+				<h1>Modelo de cajas</h1>
+                <p>modelo de cajas: margen, borde, relleno, sombras, div...</p>
+            </div>
+            <div id="panel_formularios" class="panel" hidden>
+				<h1>Formularios</h1>
+                <p>form: action, method, target, input (tipos: text, password, etc.)...</p>
+            </div>
+            <div id="panel_enlaces" class="panel" hidden>
+				<h1>Enlaces</h1>
+                <p>enlaces absolutos, relativos, marcas de página (para hacer enlaces internos)...</p>
+            </div>
+            <div id="panel_multimedia" class="panel" hidden>
+				<h1>Multimedia</h1>
+                <p>img, sound, video, etc...</p>
+            </div>
+            <div id="panel_canvas" class="panel" hidden>
+				<h1>Canvas</h1>
+                <p>2D, 3D...</p>
+            </div>
+            <!-- Paneles para accesibilidad -->
+            <div id="panel_wcag" class="panel" hidden>
+                <h1>WCAG</h1>
+                <p><a href="http://www.sidar.org/traducciones/wcag20/es/">Pautas de Accesibilidad </a> el Contenido Web</p>
+            </div>
+            <div id="panel_niveles" class="panel" hidden>
+                <h1>Niveles</h1>
+                <p>Niveles (A, AA, AAA)...</p>
+            </div>
+            <div id="panel_legales" class="panel" hidden>
+				<h1>Normativa y sanciones</h1>
+                <p>Normativa y sanciones...</p>
+            </div>
+            <!-- CSS Básico -->
+            <div id="panel_enlazar" class="panel" hidden>
+                    <h1>Qué es y cómo usar CSS</h1>
+                    <p>link, uso en ficheros externos, en bloques...</p>
+            </div>
+            <div id="panel_colores" class="panel" hidden>
+                    <h1>Colores y fondos</h1>
+            </div>
+            <div id="panel_fuentes" class="panel" hidden>
+                    <h1>Fuentes</h1>
+            </div>
+            <div id="panel_textos" class="panel" hidden>
+                    <h1>Textos</h1>
+            </div>
+            <div id="panel_clases" class="panel" hidden>
+                    <h1>Clases</h1>
+            </div>
+            <!-- Sobre la aplicación y ayuda -->
+             <div id="panel_ayuda" class="panel" hidden>
+                Caja para el manual de usuario 
+            </div>
+             <div id="panel_creditos" class="panel" hidden>
+                Creadores de la aplicación
+            </div>
+            <div id="panel_error" class="panel" hidden>
+                Caja para la gestión de errores (mostrar errores y/o avisos)
+            </div>
+            
+        </div>
+    </body>
+</html>
